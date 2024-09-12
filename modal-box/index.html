@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <title>Modal Box</title>
+</head>
+<body>
+    <a class="btn" onclick="popupClick()">Inscreva-se</a>
+
+    <div id="popup">
+        <div class="content">
+            <img src="/modal-box/assets/mail.png" alt="">
+            <h2>Entre para a nossa Newsletter</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vivamus magna augue, consectetur vel sollicitudin at,
+                ultricies at ante. Aliquam convallis erat non vulputate
+                aliquet.
+            </p>
+            <div class="input">
+                <input type="email" placeholder="Insira o seu Email">
+
+            </div>
+            <div class="input">
+                <input type="submit" value ="Inscreva-se" class="btn">
+            </div>
+        </div>
+
+        <a class="close" onclick="popupClick()"><img src="/modal-box/assets/close.png" alt=""></a>
+
+    </div>
+
+    <script>
+        function popupClick () {
+    const popup = document.getElementById('popup');
+    popup.classList.toggle('active');
+}
+    </script>
+</body>
+</html>
